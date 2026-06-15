@@ -188,7 +188,7 @@ footer{ width:100%; float:left;}
 /* NAVIGATION */
 .navigation{ width:100%; float:left; padding:20px; position:absolute; left:0; top:0; z-index:9;}
 .navigation *{transition: transform 0.6s 0.135s cubic-bezier(0.645, 0.045, 0.355, 1);}
-.navigation .hamburger { width: 45px; height: 45px; position:fixed; right:20px; top:20px; bottom:auto; float:none; transform:translateX(-200%);  transition-delay:0.8s; padding:10px; margin-right:0; cursor: pointer;  border:2px solid #e93951;  border-radius:50%; z-index:9999;}
+.navigation .hamburger { width: 45px; height: 45px; position:fixed; right:20px; top:20px; bottom:auto; float:none; transform:translateY(-200%);  transition-delay:0.8s; padding:10px; margin-right:0; cursor: pointer;  border:2px solid #e93951;  border-radius:50%; z-index:9999;}
 .navigation .hamburger.open{border:2px solid rgba(255,255,255,0.6);}
 .navigation .hamburger span{ display: block; position: absolute; height: 2px; width: 21px; background: #fff; opacity: 1; left: 10px; -webkit-transform: rotate(0deg);   -moz-transform: rotate(0deg);   -o-transform: rotate(0deg);
   transform: rotate(0deg);   -webkit-transition: .2s ease-in-out;   -moz-transition: .2s ease-in-out;  -o-transition: .2s ease-in-out;   transition: .2s ease-in-out;}
@@ -199,7 +199,7 @@ footer{ width:100%; float:left;}
 .navigation .hamburger.open span:nth-child(2) { opacity: 0; right: -40px;}
 .navigation .hamburger.open span:nth-child(3) { top: 19px; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }
 .navigation .logo{ width:143px; float:left; transform:translateY(-200%);  transition-delay:0.9s;}
-.navigation .social-media{ float:left; margin:0; padding:0; transform:translateX(200%);  transition-delay:1s;}
+.navigation .social-media{ position:absolute; top:calc(100vh - 100px); left:20px; margin:0; padding:0; transform:translateY(200%);  transition-delay:1s;}
 .navigation .social-media li{ float:left; line-height:43px; list-style:none; margin-left:15px;}
 .navigation .social-media li a{ float:left; color:#fff; font-size:13px;}
 
@@ -273,7 +273,7 @@ footer{ width:100%; float:left;}
 
 
 /* INTRODUCTION */
-.introduction{ width:100%; height:100vh; float:left; display:table; text-align:center; padding:30px 0;}
+.introduction{ width:100%; height:100vh; float:left; display:table; text-align:center; padding:30px 0; background:#fff; position:relative; z-index:2;}
 .introduction .left-side{ width:50%; display:table-cell; vertical-align:middle; background:url(../images/image1.jpg) no-repeat center; background-size:cover;}
 .introduction .left-side h3{ font-size:4vw; font-family:'Playfair Display', serif; color:#fff; transform:rotate(90deg);}
 .introduction .left-side h3 span{font-size:5vw;}
